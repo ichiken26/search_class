@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     classInfoElement.textContent = `${selectedFaculty}/${selectedBuilding}棟/${selectedFloor}F/${selectedClass}`;
 
     // CSVファイルのURL
-    const classesCSV = "media/classes.csv";
+    const classesCSV = "https://ichiken26.github.io/search_class/media/classes.csv";
 
     // CSVファイルから教室情報を読み込む関数
     async function fetchClassData() {
