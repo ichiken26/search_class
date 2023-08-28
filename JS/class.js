@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", async function() {
     floorInfoElement.textContent = `${selectedFaculty}/${selectedBuilding}棟/${selectedFloor}F`;
 
     // CSVファイルのURL
-    const classesCSV = "media/classes.csv";
-    const timetableCSV = "media/timetable.csv";
+    const classesCSV = "https://ichiken26.github.io/search_class/media/classes.csv";
+    const timetableCSV = "https://ichiken26.github.io/search_class/media/timetable.csv";
 
     // 現在時刻を取得（hhmm形式の数値として）
     const now = new Date();
