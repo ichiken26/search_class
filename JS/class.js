@@ -87,10 +87,13 @@ document.addEventListener("DOMContentLoaded", async function() {
         classGrid.appendChild(classBox);
 
         // ボックスのクリックイベント
-        classBox.addEventListener("click", function() {
-            // 次のページに遷移（table.htmlなど）
-            // ここで選択された教室名・学部・棟・階層を渡すなどの処理を行う
-            window.location.href = `table.html?faculty=${selectedFaculty}&building=${selectedBuilding}&floor=${selectedFloor}&class=${classInfo.className}`;
+        classBox.addEventListener("click", function(event) {
+            const clickedBox = event.target.textContent;
+            if (clickedFloor) {
+                // 次のページに遷移（table.htmlなど）
+                // ここで選択された教室名・学部・棟・階層を渡すなどの処理を行う
+                window.location.href = `table.html?faculty=${selectedFaculty}&building=${selectedBuilding}&floor=${selectedFloor}&class=${classInfo.className}`;
+            }
         });
     });
 });
