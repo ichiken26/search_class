@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         // ボックスのクリックイベント
         classBox.addEventListener("click", function(event) {
             const clickedBox = event.target.textContent;
-            if (clickedFloor) {
+            if (clickedBox) {
                 // 次のページに遷移（table.htmlなど）
                 // ここで選択された教室名・学部・棟・階層を渡すなどの処理を行う
                 window.location.href = `table.html?faculty=${selectedFaculty}&building=${selectedBuilding}&floor=${selectedFloor}&class=${classInfo.className}`;
