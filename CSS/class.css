@@ -1,0 +1,28 @@
+/* ここにスタイルを定義します */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+#class-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    padding: 20px;
+}
+
+.class-box {
+    background-color: #e0e0e0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.class-box.yellow {
+    background-color: yellow;
+}
