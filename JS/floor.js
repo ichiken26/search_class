@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     buildingNameElement.textContent = `${selectedFaculty}/${selectedBuilding}棟`;
 
     // CSVファイルのURL
-    const classesCSV = "media/classes.csv";
+    const classesCSV = "https://ichiken26.github.io/search_class/media/classes.csv";
 
     // CSVファイルから階層情報を読み込む関数
     async function fetchFloors() {
