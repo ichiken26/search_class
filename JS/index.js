@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         if (clickedFaculty) {
             // 次のページに遷移（building.htmlなど）
             // ここで選択された学部を渡すなどの処理を行う
-            window.location.href = `building.html?faculty=${clickedFaculty}`;
+            window.location.href = `building?faculty=${clickedFaculty}`;
         }
     });
 });
