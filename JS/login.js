@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const columns = lines[i].split(",");
                 if (columns.length >= 3) {
                     userData.push({
-                        userID: columns[0].trim(), // trim() で前後の空白を削除
+                        userID: columns[0].trim(),
                         password: columns[1].trim(),
                         studentID: columns[2].trim()
                     });
@@ -29,10 +29,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
             return userData;
         }
+        
+
 
         fetchUserData().then(userData => {
+            
             const user = userData.find(u => u.userID === userID && u.password === password);
-
+            console.log(user)
             if (user) {
                 // ログイン成功時の処理
                 window.location.href = "https://ichiken26.github.io/search_class/"; // トップページに遷移
