@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const productionTopPageURL = "https://ichiken26.github.io/search_class";
 
     // ログインページにアクセスしているかチェック
-    if (!window.location.href.endsWith("/login.html")) {
+    if (!window.location.href.endsWith("/login")) {
         // ここにログイン状態を確認する処理を追加
         // ログインされていない場合、ログインページにリダイレクト
         window.location.href = "login.html";
