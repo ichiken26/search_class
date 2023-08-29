@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const password = document.getElementById("password").value;
 
         // CSVファイルのURL
-        const loginCSV = "https://ichiken26.github.io/search_class/media/login.csv";
+        const loginCSV = "media/login.csv";
 
         // CSVファイルからユーザ情報を読み込む関数
         async function fetchUserData() {
@@ -20,23 +20,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 const columns = lines[i].split(",");
                 if (columns.length >= 3) {
                     userData.push({
-                        userID: columns[0],
-                        password: columns[1],
-                        studentID: columns[2]
+                        userID: columns[0].trim(), // trim() で前後の空白を削除
+                        password: columns[1].trim(),
+                        studentID: columns[2].trim()
                     });
                 }
             }
-            console.log(userID, password)
+
             return userData;
         }
 
-        console.log(userData)
-        
         fetchUserData().then(userData => {
             const user = userData.find(u => u.userID === userID && u.password === password);
 
-            console.log(user)
-            
             if (user) {
                 // ログイン成功時の処理
                 window.location.href = "https://ichiken26.github.io/search_class/"; // トップページに遷移
