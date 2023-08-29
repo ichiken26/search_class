@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         if (clickedBuilding) {
             // 次のページに遷移（floor.htmlなど）
             // ここで選択された学部と棟を渡すなどの処理を行う
-            window.location.href = `floor?faculty=${selectedFaculty}&building=${clickedBuilding}`;
+            window.location.href = `https://ichiken26.github.io/search_class/floor?faculty=${selectedFaculty}&building=${clickedBuilding}`;
         }
     });
 });
