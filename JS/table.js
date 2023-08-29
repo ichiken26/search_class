@@ -75,18 +75,3 @@ function generateTimetable(classInfo) {
         timetableTable.appendChild(row);
     });
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-    // 本番環境のトップページURL
-    const productionTopPageURL = "https://ichiken26.github.io/search_class";
-
-    // ログインページにアクセスしているかチェック
-    if (window.location.href.endsWith("/login.html")) {
-        // ここにログイン処理のコードを記述します
-        // 例: ログインが成功した場合、トップページに遷移
-        // 例: ログインが失敗した場合は何もしない
-    } else if (window.location.href !== productionTopPageURL) {
-        // ログイン処理後、トップページ以外にアクセスしている場合、本番環境のトップページにリダイレクト
-        window.location.href = productionTopPageURL;
-    }
-});
