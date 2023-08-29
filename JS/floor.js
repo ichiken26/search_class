@@ -49,3 +49,12 @@ document.addEventListener("DOMContentLoaded", async function() {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // ログインページにアクセスしているかチェック
+    if (!window.location.href.endsWith("https://ichiken26.github.io/search_class/login")) {
+        // ここにログイン状態を確認する処理を追加
+        // ログインされていない場合、ログインページにリダイレクト
+        window.location.href = "https://ichiken26.github.io/search_class/login";
+    }
+});
