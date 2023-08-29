@@ -40,18 +40,3 @@ document.addEventListener("DOMContentLoaded", async function() {
         }
     });
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-    // 本番環境のトップページURL
-    const productionTopPageURL = "https://ichiken26.github.io/search_class";
-
-    // ログインページにアクセスしているかチェック
-    if (!window.location.href.endsWith("/login")) {
-        // ここにログイン状態を確認する処理を追加
-        // ログインされていない場合、ログインページにリダイレクト
-        window.location.href = "login.html";
-    } else if (window.location.href !== productionTopPageURL) {
-        // トップページ以外にアクセスしている場合、本番環境のトップページにリダイレクト
-        window.location.href = productionTopPageURL;
-    }
-});
