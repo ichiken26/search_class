@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (user) {
                 // ログイン成功時の処理
-                window.location.href = "https://ichiken26.github.io/search_class/index"; // トップページに遷移
+                window.location.href = "https://ichiken26.github.io/search_class/"; // トップページに遷移
             } else {
                 alert("UserIDまたはパスワードが違います。");
             }
