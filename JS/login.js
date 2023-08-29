@@ -26,13 +26,17 @@ document.addEventListener("DOMContentLoaded", function() {
                     });
                 }
             }
-
+            console.log(userID, password)
             return userData;
         }
 
+        console.log(userData)
+        
         fetchUserData().then(userData => {
             const user = userData.find(u => u.userID === userID && u.password === password);
 
+            console.log(user)
+            
             if (user) {
                 // ログイン成功時の処理
                 window.location.href = "https://ichiken26.github.io/search_class/"; // トップページに遷移
