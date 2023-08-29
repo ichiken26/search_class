@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         if (clickedFloor) {
             // 次のページに遷移（class.htmlなど）
             // ここで選択された学部・棟・階層を渡すなどの処理を行う
-            window.location.href = `class.html?faculty=${selectedFaculty}&building=${selectedBuilding}&floor=${clickedFloor}`;
+            window.location.href = `class?faculty=${selectedFaculty}&building=${selectedBuilding}&floor=${clickedFloor}`;
         }
     });
 });
