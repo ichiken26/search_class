@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", async function() {
             if (clickedBox) {
                 // 次のページに遷移（table.htmlなど）
                 // ここで選択された教室名・学部・棟・階層を渡すなどの処理を行う
-                window.location.href = `https://ichiken26.github.io/search_class/table?faculty=${selectedFaculty}&building=${selectedBuilding}&floor=${selectedFloor}&class=${classInfo.className}`;
+                window.location.href = `https://ichiken26.github.io/search_class/classrooms/table?faculty=${selectedFaculty}&building=${selectedBuilding}&floor=${selectedFloor}&class=${classInfo.className}`;
             }
         });
     });
