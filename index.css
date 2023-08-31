@@ -1,0 +1,58 @@
+/* ここにスタイルを定義します */
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 画面の高さに合わせる */
+    overflow: hidden;
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 画像を保持し、必要に応じてトリミング */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: #e0e0e0;
+}
+
+.search-box {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}

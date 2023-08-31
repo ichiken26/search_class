@@ -1,0 +1,83 @@
+/* ここにスタイルを定義します */
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 画面の高さに合わせる */
+    overflow: hidden;
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 画像を保持し、必要に応じてトリミング */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 教室名ボックス */
+.classroom-box {
+    display: inline-block;
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+  }
+
+/* 他のスタイル定義 */
+
+.building-box {
+    display: inline-block;
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.building-list {
+    display: flex;
+    flex-direction: column; /* 縦並びに配置 */
+    align-items: center; /* 横方向中央に配置 */
+}
+
+#building-text{
+    font-family: 'Arial', sans-serif; /* フォントの指定 */
+    font-size: 18px; /* フォントサイズの指定 */
+    color: #ff0000; /* テキストの色の指定 */
+    font-size: 18px; /* フォントサイズの指定 */
+    font-style: italic; /* イタリックにする */
+    border: 2px solid #333; /* ボーダーを追加 */
+    padding: 10px; /* テキストとボーダーの間隔を調整 */
+    border-radius: 5px; /* ボーダーの角を丸くする */
+}
