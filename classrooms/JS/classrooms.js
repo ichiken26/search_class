@@ -53,27 +53,3 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = productionTopPageURL;
     }
 });
-
-// JS/index.js
-document.addEventListener("DOMContentLoaded", function() {
-    const csvUpload = document.getElementById("csv-upload");
-
-    csvUpload.addEventListener("change", function(event) {
-        const selectedFile = event.target.files[0];
-
-        if (selectedFile) {
-            const fileType = selectedFile.type;
-            const fileName = selectedFile.name.toLowerCase();
-
-            if (fileType === "text/csv" && fileName === "classes.csv") {
-                // 選択されたファイルが classes.csv の場合、ここでアップロード処理を行う
-                // ファイルの内容を読み込んで処理するなど
-                console.log("アップロードされたファイル: ", selectedFile);
-            } else {
-                alert("選択されたファイルは classes.csv ではありません。");
-                // 選択されたファイルが classes.csv 以外の場合、アラートを表示し選択をクリア
-                csvUpload.value = "";
-            }
-        }
-    });
-});
